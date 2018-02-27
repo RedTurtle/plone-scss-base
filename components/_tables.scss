@@ -1,0 +1,5 @@
+table.listing {
+    @extend .table;
+    @extend .table-bordered;
+    @extend .table-striped;
+}

@@ -1,0 +1,39 @@
+.pat-autotoc:not(.autotabs) {
+    .autotoc-nav {
+        float: right;
+        min-width: 150px;
+        background-color: #f2f1f1;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17);
+        padding: 0.4rem 0.75rem;
+        margin: 0 0 0.75rem 0.75rem;
+
+        a {
+            display: block;
+        }
+        .active,
+        .active:hover {
+            color: #696969;
+            cursor: default;
+            text-decoration: none;
+        }
+        .autotoc-level-1 {
+            margin-left: 0;
+            font-size: 1.2 * $font-size-base;
+        }
+        .autotoc-level-2 {
+            margin-left: 0.75rem;
+            font-size: $font-size-base;
+        }
+        .autotoc-level-3 {
+            margin-left: 0.75rem*2;
+            font-size: 0.8 * $font-size-base;
+        }
+    }
+}
+//changes on mobile
+@media screen and (max-width: $screen-xs-max) {
+    .pat-autotoc .autotoc-nav {
+        float: none;
+        margin: 0 0 20px 0;
+    }
+}

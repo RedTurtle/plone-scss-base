@@ -1,0 +1,30 @@
+.portalMessage {
+    padding: $alert-padding;
+    margin-bottom: $line-height-computed;
+    border: 1px solid transparent;
+    border-radius: $alert-border-radius;
+
+    a {
+        @extend %link-on-dark-bg;
+        color: inherit;
+        font-weight: $alert-link-font-weight;
+    }
+    strong {
+        margin-right: 0.5rem;
+    }
+    &.info {
+        color: $alert-info-text;
+        background-color: $alert-info-bg;
+        border-color: $alert-info-border;
+    }
+    &.error {
+        color: $alert-danger-text;
+        background-color: $alert-danger-bg;
+        border-color: $alert-danger-border;
+    }
+    &.warning {
+        color: $alert-warning-text;
+        background-color: $alert-warning-bg;
+        border-color: $alert-warning-border;
+    }
+}

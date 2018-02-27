@@ -1,0 +1,31 @@
+{
+  "name": "plone-scss-base",
+  "version": "0.1.0",
+  "description": "Base scss styles for Plone 5 theming",
+  "main": "bundle.scss",
+  "scripts": {
+    "build": "node-sass --precision 8 --include-path node_modules --output-style compressed --output lib styles.scss",
+    "test": "node-sass --precision 8 --include-path node_modules styles.scss > /dev/null"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RedTurtle/plone-scss-base.git"
+  },
+  "keywords": ["Plone", "Theme", "Theming", "Scss", "Sass"],
+  "author": "Piero Nicolli <piero.nicolli@redturtle.it>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RedTurtle/plone-scss-base/issues"
+  },
+  "homepage": "https://github.com/RedTurtle/plone-scss-base#readme",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "prettier": "^1.11.0",
+    "stylelint": "^9.1.1",
+    "stylelint-config-prettier": "^2.1.0",
+    "stylelint-config-recommended": "^2.1.0"
+  }
+}
