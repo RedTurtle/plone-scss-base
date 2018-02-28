@@ -34,6 +34,10 @@ To customize these styles, make a copy of the [bootstrap variables file](https:/
 
 If you don't need all of the styles provided here, you can cherry-pick the partials you need by making a copy of the [main stylesheet of this package (styles.scss)](https://github.com/RedTurtle/plone-scss-base/blob/master/styles.scss) and commenting the partials you don't need.
 
+## Bonus
+
+As an extra that may be helpful, in the `lib` folder of the package you download from npm, there is a compiled css stylesheet with all of the styles included in this repo.
+
 ## Installation
 
 ```sh
