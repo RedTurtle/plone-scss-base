@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/RedTurtle/plone-scss-base.svg?branch=master)](https://travis-ci.org/RedTurtle/plone-scss-base)
+
 # plone-scss-base
 
 Base scss styles for Plone 5 theming
