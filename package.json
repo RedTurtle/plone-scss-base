@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node-sass --precision 8 --include-path node_modules --output-style compressed --output lib styles.scss",
     "test": "node-sass --precision 8 --include-path node_modules styles.scss > /dev/null",
-    "prepublish": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
