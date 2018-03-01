@@ -1,6 +1,6 @@
 {
   "name": "plone-scss-base",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Base scss styles for Plone 5 theming",
   "main": "bundle.scss",
   "scripts": {
@@ -12,7 +12,13 @@
     "type": "git",
     "url": "git+https://github.com/RedTurtle/plone-scss-base.git"
   },
-  "keywords": ["Plone", "Theme", "Theming", "Scss", "Sass"],
+  "keywords": [
+    "Plone",
+    "Theme",
+    "Theming",
+    "Scss",
+    "Sass"
+  ],
   "author": "Piero Nicolli <piero.nicolli@redturtle.it>",
   "license": "MIT",
   "bugs": {
