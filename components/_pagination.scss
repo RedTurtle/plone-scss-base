@@ -1,0 +1,82 @@
+.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: $line-height-computed 0;
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    li {
+        display: block;
+        float: left; // Collapse white-space
+        position: relative;
+        padding: 0;
+        font-weight: 400;
+        > a,
+        > span {
+            padding: $padding-base-vertical $padding-base-horizontal;
+            line-height: $line-height-computed;
+            text-decoration: none;
+            color: $pagination-color;
+            background-color: $pagination-bg;
+            border: 1px solid $pagination-border;
+            margin-left: -1px;
+        }
+        > a {
+            &:hover,
+            &:focus {
+                color: $pagination-hover-color;
+                background-color: $pagination-hover-bg;
+                border: 1px solid $pagination-hover-border;
+            }
+        }
+        &.previous {
+            > a {
+                margin-left: 0;
+                border-top-left-radius: $border-radius-base;
+                border-bottom-right-radius: $border-radius-base;
+            }
+            .arrow:before {
+                content: '\3c';
+            }
+        }
+        &.next {
+            > a {
+                border-top-right-radius: $border-radius-base;
+                border-bottom-right-radius: $border-radius-base;
+            }
+            .arrow:after {
+                content: '\3e';
+            }
+        }
+        &.active > span {
+            z-index: 2;
+            font-weight: 400;
+            color: $pagination-active-color;
+            background-color: $pagination-active-bg;
+            border: 1px solid $pagination-active-border;
+            cursor: default;
+        }
+        &.disabled > span {
+            //just in case, not used in plone
+            color: $pagination-disabled-color;
+            background-color: $pagination-disabled-bg;
+            border: 1px solid $pagination-disabled-border;
+            cursor: default;
+        }
+    }
+}
+
+// mobile pagination only shows next and previous as default behaviour
+@media (max-width: $screen-xs-min) {
+    .pagination {
+        li {
+            display: none;
+        }
+        li.previous,
+        li.next {
+            display: inline;
+        }
+    }
+}
