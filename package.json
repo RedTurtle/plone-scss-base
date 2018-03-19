@@ -1,6 +1,6 @@
 {
   "name": "plone-scss-base",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Base scss styles for Plone 5 theming",
   "main": "bundle.scss",
   "scripts": {
