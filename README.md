@@ -15,7 +15,7 @@ In order to use this correctly, you will need to tell your sass compiler to also
 * If you use it through the node-sass cli, by adding the `--include-path node_modules` argument
 * If you configure it with a js object, add the `includePaths` property, which will look like this: `includePaths: ['node_modules']`
 
-This is needed because the syles inside this package read other styles from its `bootstrap-sass` dependency, and it will also make is smoother for you to use these styles.
+This is needed because the styles inside this package read other styles from its `bootstrap-sass` dependency, and it will also make it smoother for you to use these styles.
 
 In order to add these styles to your theme styles, import it like this:
 
